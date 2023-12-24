@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital| website</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+  </head>
+  <body onload="autochange()">
+    <div class="top-banner">
+      <div class="container">
+        <div class="smalltext">
+          <p>we are always available 24/7 for you.! <h1 id="clock"></h1></p>
+        </div>
+      </div>
+    </div>
+    <header class="container header-area">
+      <nav class="navbar flex">
+        <h1>
+          <a href=""
+            ><span>Gardanibagh<i class="bx bx-plus-medical"></i></span
+          ></a>
+        </h1>
+        <ul class="right-menu flex">
+          <li><a href="#Home" class="active" class="nav-link">Home</a></li>
+          <li>
+            <a href="#Department">Department<i class="bx bxl-codepen"></i></a>
+          </li>
+          <li id="Routines"><a href="#Routine" class="nav-link">Routine</a></li>
+          <li><a href="#Timing" class="nav-link">9Am to 10pm</a></li>
+          <li><a href="#Dayoff" class="nav-link">Sunday close</a></li>
+          <li>
+            <a href="#contactus" class="btn" class="nav-link">Call for booking </a>
+          </li>
+        </ul>
+
+        <ul class="left-menu flex">
+          <li><a href="">Emergency Call</a></li>
+          <li>
+            <a href="">+917903598147 <i class="bx bx-phone-call"></i></a>
+          </li>
+        </ul>
+        <div class="menu-btn" id="menu-btn">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--header end  -->
+
+    <!-- banner  -->
+
+    <section class="banner">
+      <div class="home-banner">
+        <img src="img/hospital.jpg" alt="" id="photo">
+      </div>
+    </section>
+    <!-- banner End -->
+
+    <!-- blur background image with text start -->
+    <section class="blur-banner">
+      <div class="bg-text">
+        <h1>make your own</h1>
+        <p>Hospital website with 2 department</p>
+      </div>
+    </section>
+    <!-- blur background image with text end -->
+
+      <section class="department container" id="Department">
+        <div class="d-detail">
+          <h1>Skin department</h1>
+          <p>Doctor Name: Aunj singh</p>
+          <p>Year of experience : 10+</p>
+          <p>Timing :- Mon,wed,fri</p>
+
+          <div class="m-box-container">
+            <div class="m-box box-1"></div>
+            <div class="m-box box-2"></div>
+            <div class="m-box box-3"></div>
+          </div>
+         
+        </div>
+        <div class="doct-box">
+          <div class="doc-img">
+            <img src="img/skin.jpg" alt="">
+          </div>
+         <div class="doc-des">
+          <p>Best skin Doctor </p>
+         </div>
+        </div>
+      </section>
+
+      <section class="department department2 container" id="Department" >
+
+        <div class="doct-box">
+          <div class="doc-img">
+            <img src="img/591502.jpg" alt="">
+          </div>
+         <div class="doc-des">
+          <p>Best skin Doctor </p>
+         </div>
+        </div>
+        <div class="d-detail">
+          <!-- <h1>Skin department</h1> -->
+          <p>Doctor Name: Anupma singh</p>
+          <p>Year of experience : 10+</p>
+          <p>Timing :- TUE,THUS,SAT</p>
+
+          <div class="m-box-container">
+            <div class="m-box box-1 box-4"></div>
+            <div class="m-box box-2 box-5"></div>
+            <div class="m-box box-3 box-6"></div>
+          </div>
+         
+        </div>    
+      </section>
+
+      <section class="table-box container" id="Routine">
+        <div class="table-left">
+          <table border="0">
+            <tr>
+              <th>Days</th>
+              <th>Routine</th>
+              <th>ward no-</th>
+              <th>Doctor</th>
+            </tr>
+            <tr>
+              <td>monday</td>
+              <td>day-sift</td>
+              <td>2B</td>
+              <td>Anuj singh</td>
+            </tr>
+  
+            <tr>
+              <td>Tuesday</td>
+              <td>Morning-sift</td>
+              <td>3B</td>
+              <td>Anupma singh</td>
+            </tr>
+  
+            <tr>
+              <td>Wednesday</td>
+              <td>day-sift</td>
+              <td>4B</td>
+              <td>Anuj singh</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>day-sift</td>
+              <td>2B</td>
+              <td>Anuj singh</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>day-sift</td>
+              <td>2B</td>
+              <td>Anuj singh</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>day-sift</td>
+              <td>2B</td>
+              <td>Anuj singh</td>
+            </tr>
+            <tr>
+              <td>sunday</td>
+              <td>day-sift</td>
+              <td>2B</td>
+              <td>Anuj singh</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="table-rigth">
+          <img src="img/Female-Doctor-PNG-HD.png" alt="" class="images">
+        </div>
+
+      </section>
+
+      <section class="banner2 ">
+        <div class="banner-container container">
+        <div class="responsive">
+          <div class="gallery">
+            <a href="img/GettyImages-898906336.jpg" target="_blank">
+              <img src="img/General-ward-2.jpg" alt="">
+            </a>
+            <div class="desc">MBBS</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="img/Female-Doctor-PNG.png" target="_blank">
+              <img src="img/General-ward-2.jpg" alt="">
+            </a>
+            <div class="desc">MBBS</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="img/GettyImages-898906336.jpg" target="_blank">
+              <img src="img/hospitalssss.webp" alt="">
+            </a>
+            <div class="desc">MBBS</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="img/GettyImages-898906336.jpg" target="_blank">
+              <img src="img/General-ward-2.jpg" alt="">
+            </a>
+            <div class="desc">MBBS</div>
+          </div>
+        </div>
+
+      </div>
+      </section>
+      <!-- ->>>>>>>>>>>>>>>>>>>>>>>> -->
+
+      <section class="contactus container" id="contactus">
+        <img src="img/Female-Doctor-PNG.png" alt="" class="left-contact-image">
+        <form action="/action_page.php">
+          <div class="image-container">
+            <img src="img/slider-1.1.png" alt="" class="avtar">
+          </div>
+
+          <div class="contact-form">
+            <label for="fname">First Name:</label><br>
+            <input type="text" name="name" id="gfg" placeholder="Enter patient's name" required>
+
+            <label for="Address">Address</label>
+            <input type="text" required>
+
+            <label for="problem">Problems</label>
+            <input type="text" required>
+
+            <label for="contact">Contact</label>
+            <input type="text" placeholder="+91 790XXXXXXX">
+            
+          
+            <input type="submit" class="btn">
+          </div>
+        </form>
+      </section>
+      <!-- ------>
+      <section class="footer-link">
+        <div class="footer-links">
+            <ul>
+                <li><h3>what's new</h3></li>
+                <li><a href="">Surface Laptop Studio 2</a></li>
+                <li><a href="">Surface Laptop Go 3</a></li>
+                <li><a href="">Surface Pro 9</a></li>
+                <li><a href="">Surface Laptop 5</a></li>
+                <li><a href="">Surface Studio 2+</a></li>
+                <li><a href="">Copilot in Windows</a></li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Windows 11 apps</a></li>
+            </ul>
+
+            <ul>
+                <li><h3>Gardanibagh</h3></li>
+                <li><a href="">Account profile</a></li>
+                <li><a href="">Download Center</a></li>
+                <li><a href="">Microsoft Store support</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">Order tracking</a></li>
+                <li><a href="">Certified Refurbished</a></li>
+                <li><a href="">Microsoft Store Promise</a></li>
+                <li><a href="">Flexible Payments</a></li>
+               
+            </ul>
+
+            <ul>
+                <li><h3>Education</h3></li>
+
+                <li><a href="">Microsoft in education</a></li>
+                <li><a href="">Devices for education</a></li>
+                <li><a href="">Microsoft Teams for Education</a></li>
+                <li><a href="">Microsoft 365 Education</a></li>
+                <li><a href="">How to buy for your school</a></li>
+                <li><a href="">Educator training and development</a></li>
+                <li><a href="">Deals for students and parents</a></li>
+                <li><a href="">Azure for students</a></li>
+            </ul>
+
+            <ul>
+                <li><h3>Doctors</h3></li>
+                <li><a href="">microsoft cloud</a></li>
+                <li><a href="">Microsoft Security</a></li>
+                <li><a href="">Dynamics 365</a></li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Microsoft Power Platform</a></li>
+                <li><a href="">Microsoft Teams</a></li>
+                <li><a href="">Microsoft Industry</a></li>
+                <li><a href="">Small Business</a></li>
+            </ul>
+
+            <ul>
+                <li><h3>Location</h3></li>
+                <li><a href="">Azure</a></li>
+                <li><a href="">Developer Center</a></li>
+                <li><a href="">Documentation</a></li>
+                <li><a href="">Microsoft Learn</a></li>
+                <li><a href="">Microsoft Tech Community</a></li>
+                <li><a href="">Azure Marketplace</a></li>
+                <li><a href="">AppSource</a></li>
+                <li><a href="">Visual Studi</a></li>
+            </ul>
+
+            <ul>
+                <li><h3>Company</h3></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">About Microsoft</a></li>
+                <li><a href="">Company news</a></li>
+                <li><a href="">Privacy at Microsoft</a></li>
+                <li><a href="">Investors</a></li>
+                <li><a href="">Diversity and inclusion</a></li>
+                <li><a href="">Accessibility</a></li>
+                <li><a href="">Sustainability</a></li>
+            </ul>
+        </div>
+     </section>
+
+     <section class="footer">
+      <div class="footer-area">
+        <p>@copyright 2023 | Developed By,Rahul kumar</p>
+      </div>
+     </section>
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#Routines").click(function(){
+          $(".table-left,img").fadeIn();
+        });
+      });
+
+      $(document).ready(function () { 
+            $("#gfg").textinput({ 
+                clearBtn: true 
+            }); 
+        }); 
+    </script>
+  </body>
+</html>
